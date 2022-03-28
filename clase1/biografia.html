@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 - intro a HTML</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+        </style>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a13ea41b54.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <h1 class="colorBeige container10">KrusePh</h1>
+            </a>
+        </div>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active hidden">Home</a>
+            <a class="button box20" href="tienda.html"> Tienda</a>
+            <a class="button box20" href="biografia.html">Biografia</a>
+            <a class="button box20" href="contacto.html">Contacto</a>
+            <a class="button box20" href="instagram.html#instagram">Instagram</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i><!-- es el botoncito -->
+            </a>  
+    </nav>
+        <a href="index.html">
+            <img class="box30" src="img/pagina.jpeg" alt="Imagen de ola en la distancia">
+        </a>
+    </header>
+    <div>
+        <p class="colorWhite">
+            Mi nombre es mateo kruse, desde que soy chico que el mar me llama, y desde que pude conseguir una camara nunca pare de observar el mar y congelar momentos en los que siento que es oportuno.
+
+            <strong>Futuro texto mejor armado en construccion</strong>
+        </p>
+    </div>
+    <footer class="footerBg">
+        <div>
+            <h2 class="colorBeige">Contactenos</h2>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/mateokruseph" target="_blank">
+                  <i
+                    class="fab fa-facebook fa-2x"
+                    style="color: #1877f2;"
+                  ></i>
+                </a>
+            
+                <a href="https://www.instagram.com/matekrusefoto/" target="_blank"
+                  ><i
+                    class="fab fa-instagram fa-2x"
+                    style="color: deeppink;"
+                  ></i>
+                </a>
+            
+                <a href="https://www.instagram.com/kruse_ph/" target="_blank"
+                  ><i
+                    class="fab fa-instagram fa-2x"
+                    style="color: deeppink;"
+                  ></i>
+                </a>
+            </div>
+    </footer> 
+</body>
+</html>

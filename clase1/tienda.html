@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 - intro a HTML</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+        </style>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a13ea41b54.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="gridPage , containerCenter">
+        <header>
+            <div>
+                <a href="index.html">
+                    <h1 class="colorBeige container10">KrusePh</h1>
+                </a>
+            </div>
+            <nav class="topnav" id="myTopnav">
+                    <a href="index.html" class="active hidden">Home</a>
+                    <a class="button box20" href="tienda.html"> Tienda</a>
+                    <a class="button box20" href="biografia.html">Biografia</a>
+                    <a class="button box20" href="contacto.html">Contacto</a>
+                    <a class="button box20" href="instagram.html#instagram">Instagram</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i><!-- es el botoncito -->
+                    </a>  
+            </nav>
+            <a href="index.html">
+                <img class="box30 " src="img/pagina.jpeg" alt="Imagen de ola en la distancia">
+            </a>
+            <div >
+                <h3 class="colorWhite banner box10">ELIGE, PAGA Y RECIBE TU PEDIDO SIN MOVERTE DE TU CASA.</h3>
+            </div>
+        </header>
+        <section class="containerCenter">
+            <table class="colorWhite">
+                <tr>
+                    <th>Dimensiones</th>
+                    <th>Precio sin marco</th>
+                    <th>Precio con marco</th>
+                </tr>
+                <tr>
+                    <td>15x21</td>
+                    <td>1500</td>
+                    <td>2100</td>
+                </tr>
+                <tr>
+                    <td>20x30</td>
+                    <td>1700</td>
+                    <td>2200</td>
+                </tr>
+                <tr>
+                    <td>30x40</td>
+                    <td>2000</td>
+                    <td>2600</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+                <form class="colorWhite containerCenter" action="envio.php" method="post">
+                    <fieldset>
+                        <legend>Datos de la compra</legend>
+                        <div class="box10">
+                            <label for="nombre">Nombre y apellido</label>
+                            <input type="text" placeholder="juan palote" name="nombre" id="nombre">
+                        </div>
+                        <div class="box10">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="nombre@mail.com">
+                        </div>
+                            <div class="box10">
+                                <label for="payment">Elegi tu medio de pago:</label>
+                                <select name="payment" id="payment">
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Debito">Debito</option>
+                                <option value="Credito">Tarjeta de credito</option>
+                                <option value="MercadoPago">Mercado Pago</option>
+                                </select>
+                            </div>
+                            <div class="box10">
+                                <label for="Dimensiones">Elegi las dimensiones:</label>
+                                <select name="dimensiones" id="dimensiones">
+                                <option value="23x30">23x30</option>
+                                <option value="30x40">30x40</option>
+                                <option value="45x60">45x60</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p>Ingrese la imagen deseada</p>
+                                <input type="checkbox" id="imagen1" name="imagen1" value="imagen1">
+                                <label for="imagen1">ola 1</label><br>
+                                <input type="checkbox" id="imagen2" name="imagen2" value="imagen2">
+                                <label for="imagen2"> ola 2 </label><br>
+                                <input type="checkbox" id="imagen3" name="imagen3" value="imagen3">
+                                <label for="imagen3"> ola 3 </label>
+                            </div>                       
+                            <input class="buttonSumbit" type="submit" value="Submit">
+                    </fieldset>
+                </form>        
+        </section>
+        <footer class="footerBg">
+            <div>
+                <h2 class="colorBeige">Contactenos</h2>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/mateokruseph" target="_blank">
+                      <i
+                        class="fab fa-facebook fa-2x"
+                        style="color: #1877f2;"
+                      ></i>
+                    </a>
+                
+                    <a href="https://www.instagram.com/matekrusefoto/" target="_blank"
+                      ><i
+                        class="fab fa-instagram fa-2x"
+                        style="color: deeppink;"
+                      ></i>
+                    </a>
+                
+                    <a href="https://www.instagram.com/kruse_ph/" target="_blank"
+                      ><i
+                        class="fab fa-instagram fa-2x"
+                        style="color: deeppink;"
+                      ></i>
+                    </a>
+                </div>
+        </footer> 
+    </body>
+</div>
+</html>
