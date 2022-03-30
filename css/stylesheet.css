@@ -52,17 +52,6 @@ body{
         color: white;
         text-decoration: none;
     }
-
-    table, th, td{
-        /* color: beige; */
-        border: 2px solid beige;
-        margin-left:auto; 
-        margin-right:auto;
-        margin-bottom: 2em;
-        border-collapse: collapse;
-        text-align: center;
-        font-size: large;
-    }
     
     section#galeria{
         grid-area: galeria;
@@ -93,57 +82,7 @@ body{
         margin:  30px;
         font-size: 120%;
     }
-    .button {
-        transition-duration: 0.4s;
-        color: beige;
-      }
-      .button:hover {
-        background-color: white; 
-        color: black;
-        font-size: large;
-      }
-      .buttonSumbit {
-        transition-duration: 0.4s;
-        color: black;
-        font-size: large;
-      }
-      .buttonSumbit:hover {
-        background-color: green; 
-        font-size: larger;
-        color: white;
-
-      }
-      form{
-          color: black;
-          border-style: solid white;
-          font-size: large;
-          width: 25%;
-          text-align: center;
-          text-decoration: none;
-          margin-bottom: 3em;
-      }
-      select {
-        width: 100%;
-        padding: 16px 20px;
-        margin: 1em;
-        border: none;
-        border-radius: 4px;
-        background-color: beige;
-      }
       
-    
-footer{
-    text-align: left;
-    border: 2px solid beige;
-    border-radius: 5px;
-    padding: 20px;
-    margin:  20px;
-    grid-area: footer;
-}
-    .footerBg{
-        background-color: black ;
-    }
-
       /*mobile */
       @media screen and (max-width: 600px){
     .topnav {
