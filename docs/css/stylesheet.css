@@ -226,9 +226,9 @@ body{
                 grid-template-columns: repeat(3,1fr);
                 grid-template-rows: repeat(3,1fr); 
                 grid-template-areas: 
-                "img""img""img"
-                "img""img""img"
-                "img""img""img"; 
+                "img img img"
+                "img img img"
+                "img img img"; 
             }
     }
     
