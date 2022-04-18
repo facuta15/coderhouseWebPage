@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 1 - intro a HTML</title>
+    <meta name="keywords" content="fotos,mar,cuadros,portfolio,compras,decoracion">
+    <meta name="author" content="Facundo Tadini">
+    <meta name="copyright" content="KrusePh SA copyright 2022">
+    <title>KrusePh - Tienda</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
         </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a13ea41b54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../sass/styles.css">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a13ea41b54.js" crossorigin="anonymous"></script>
 <body>
     <div id="gridPage , containerCenter">
         <header>
@@ -56,7 +59,7 @@
                 <h3 class="colorWhite banner box10">ELIGE, PAGA Y RECIBE TU PEDIDO SIN MOVERTE DE TU CASA.</h3>
             </div>
         </header>
-        <section class="px-3">
+        <section class="py-3 px-3 w-75 containerCenter">
             <table class="table table-dark table-hover w-100">
                 <tr>
                     <th>Dimensiones</th>
@@ -81,8 +84,8 @@
             </table>
         </section>
         
-        <div class="containerCenter">
-            <div class="py-3 px-3 w-100">
+        <div>
+            <div class="py-3 px-3 w-75 containerCenter">
                 <form class="bg-light text-center containerCenter  rounded py-3 px-3">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label ">Email</label>
@@ -93,8 +96,8 @@
                         <input type="text" class="form-control" id="Nombre">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="Direccion" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="Direccion">
                     </div>
                     <div class="mb-3 form-check text-start">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
