@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -6,12 +7,84 @@
           box-sizing: border-box;
 }
 
+.center-xy {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+html, body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: #000;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+}
+
+.copy-container {
+  text-align: center;
+}
+
+p {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: .2px;
+  margin: 0;
+}
+
+.handle {
+  background: #ffe500;
+  width: 14px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  margin-top: 1px;
+  position: absolute;
+}
+
+#cb-replay {
+  fill: #666;
+  width: 20px;
+  margin: 15px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  overflow: inherit;
+  cursor: pointer;
+}
+
+#cb-replay:hover {
+  fill: #888;
+}
+
 header {
   text-align: center;
   grid-area: header;
 }
 
 body {
+  overflow-x: hidden;
   background-color: black;
   grid-area: body;
 }
@@ -198,6 +271,9 @@ section#galeria {
   .socialMedia {
     width: 1rem;
   }
+  iframe {
+    height: 440px;
+  }
 }
 
 /* tablet */
@@ -239,6 +315,17 @@ section#galeria {
             transition-duration: 0.5s;
     padding: 0;
   }
+  iframe {
+    height: 500px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .box30 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 120%;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -277,6 +364,16 @@ section#galeria {
         grid-template-areas: "img img img"
  "img img img"
  "img img img";
+  }
+  .frame-size {
+    width: 25%;
+  }
+  iframe {
+    height: 440px;
+    width: 320px;
+  }
+  .hide-on-desktp {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
